@@ -8,7 +8,7 @@ function submitFeedback() {
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
     document.getElementById('userInfo').style.display = 'block';
-
+    document.getElementById('userExperince')=user_exp;
 }
 const username = document.getElementById('name').value;
 const age = document.getElementById('age').value;
@@ -24,3 +24,6 @@ document.addEventListener('keydown', function(event) {
      submitFeedback();
    }
  });
+
+//Practice Area
+const user_exp=document.getElementById('userExperince').value;
