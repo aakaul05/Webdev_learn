@@ -1,14 +1,8 @@
 let count = 0; // Initialize count to 0
-function increaseCount() {
-  count++; // Increment the count by 1
-}
+
 function displayCount() {
     document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
     }
-    function increaseCount() {
-        count++; // Increment the count by 1
-        displayCount(); // Display the count
-      }
       function checkCountValue() {
         if (count === 10) {
           alert("Your Instagram post gained 10 followers! Congratulations!");
@@ -21,4 +15,9 @@ function displayCount() {
         displayCount(); // Display the count
         checkCountValue(); // Check count value and display messages
       }
-                  
+      //Practice task
+      function resetCount()
+      {
+        count=0;
+        displayCount();
+      }            
