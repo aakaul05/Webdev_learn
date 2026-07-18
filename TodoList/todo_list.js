@@ -32,3 +32,11 @@ function clearCompletedTasks() {
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
 displayTasks();
+const clearall=document.getElementById("clearallbtn");
+clearall.addEventListener("click",clearalltask);
+
+function clearalltask()
+{
+    tasks=[];
+    displayTasks();
+}
